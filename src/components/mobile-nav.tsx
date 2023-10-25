@@ -129,7 +129,7 @@ export default function MobileNav() {
         </Accordion>
         <SheetFooter className="mx-auto mt-6">
           <SheetClose asChild>
-            <Button className="w-full" asChild onClick={() => setOpen(true)}>
+            <Button className="w-full" asChild>
               <Link href="/register">Đăng ký ngay</Link>
             </Button>
           </SheetClose>
