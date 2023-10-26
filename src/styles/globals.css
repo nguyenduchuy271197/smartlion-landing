@@ -47,3 +47,29 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+  .underline-text {
+    color: theme("colors.foreground");
+    text-decoration: none;
+    background-image: linear-gradient(
+      theme("colors.foreground"),
+      theme("colors.foreground")
+    );
+    background-size: 0% 0.04em;
+    background-position-y: 100%;
+    background-position-x: 0%;
+    background-repeat: no-repeat;
+    transition: background-size 0.2s ease-in-out;
+  }
+  .underline-text:hover,
+  .underline-text:focus,
+  .underline-text:active {
+    background-size: 100% 0.04em;
+  }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: none !important;
+}

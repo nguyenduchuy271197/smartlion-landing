@@ -9,7 +9,14 @@ export default function SectionHeading({
   ...props
 }: SectionHeadingProps) {
   return (
-    <h2 className={cn("text-2xl font-medium uppercase", className)} {...props}>
+    <h2
+      className={cn(
+        "text-2xl font-bold uppercase flex items-center gap-4",
+        className
+      )}
+      {...props}
+    >
+      <span className="w-6 h-6 bg-primary rounded-full"></span>
       {children}
     </h2>
   );

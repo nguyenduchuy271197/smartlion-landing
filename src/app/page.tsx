@@ -2,6 +2,7 @@ import CTA from "./_components/cta";
 import Hero from "./_components/hero";
 import Partners from "./_components/partners";
 import Reasons from "./_components/reasons";
+import Reviews from "./_components/reviews";
 import Solutions from "./_components/solutions";
 
 export default function HomePage() {
@@ -11,6 +12,7 @@ export default function HomePage() {
       <Solutions />
       <Reasons />
       <Partners />
+      <Reviews />
       <CTA />
     </div>
   );

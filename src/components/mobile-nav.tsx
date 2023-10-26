@@ -23,8 +23,8 @@ export default function MobileNav() {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button variant="ghost" className="lg:hidden">
-          <Menu />
+        <Button variant="ghost" size="icon" className="lg:hidden">
+          <Menu className="w-5 h-5" />
         </Button>
       </SheetTrigger>
 

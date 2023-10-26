@@ -1,5 +1,9 @@
-import { Metadata } from "next";
 import "@/styles/globals.css";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+import { Metadata } from "next";
 import { Source_Sans_3 as FontSans } from "next/font/google";
 import { ReactNode } from "react";
 import { cn } from "@/lib/utils";

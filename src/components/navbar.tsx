@@ -9,11 +9,11 @@ export default function Navbar() {
   return (
     <header className="fixed top-0 left-0 right-0 z-30 border-b bg-white">
       <div className="container">
-        <div className="h-[var(--navbar-height)] flex items-center gap-8">
+        <div className="h-[var(--navbar-height)] flex items-center gap-12">
           <div className="mr-auto">
-            <Logo hiddenOnMobile={true} />
+            <Logo hiddenOnMobile />
           </div>
-          <ul className="lg:flex items-center gap-4 hidden">
+          <ul className="lg:flex items-center gap-20 hidden">
             {ROUTES.map((route) => (
               <li key={route.id}>
                 <Link href={route.href}>{route.label}</Link>
@@ -23,10 +23,11 @@ export default function Navbar() {
           <div className="flex items-center gap-2">
             <Button asChild className="group">
               <Link href="">
-                Tham gia ngay
+                Bắt đầu ngay
                 <ArrowRightCircle />
               </Link>
             </Button>
+
             <MobileNav />
           </div>
         </div>
