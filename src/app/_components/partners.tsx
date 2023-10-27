@@ -65,12 +65,7 @@ export default function Partners() {
       <HorizontalParallax baseVelocity={-2}>
         {partners.map(({ label, src }) => (
           <div key={label} className="relative h-[80px] aspect-[2/1]">
-            <Image
-              src={src}
-              alt={label}
-              className="object-contain brightness-0 invert opacity-70"
-              fill
-            />
+            <Image src={src} alt={label} className="object-contain" fill />
           </div>
         ))}
       </HorizontalParallax>

@@ -1,6 +1,6 @@
 import SectionHeading from "@/components/section-heading";
 import { Button } from "@/components/ui/button";
-import { ArrowRightCircle } from "lucide-react";
+import { ArrowRight, ArrowRightCircle } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -16,17 +16,22 @@ export default function CTA() {
               voluptas at,
             </p>
           </div>
-          <div className="flex flex-col md:flex-row md:items-center gap-2 sm:gap-4">
-            <Button asChild variant="dark" size="lg">
+          <div className="flex flex-col md:flex-row md:items-center gap-2 sm:gap-12">
+            <Button asChild variant="dark" size="lg" className="group">
               <Link href="">
                 Khám phá giải pháp
-                <ArrowRightCircle />
+                <ArrowRightCircle className="group-hover:translate-x-1" />
               </Link>
             </Button>
-            <Button asChild variant="secondary" size="lg">
+            <Button
+              asChild
+              variant="link"
+              size="lg"
+              className="group text-foreground"
+            >
               <Link href="">
                 Xem thêm
-                <ArrowRightCircle />
+                <ArrowRight className="group-hover:translate-x-1" />
               </Link>
             </Button>
           </div>

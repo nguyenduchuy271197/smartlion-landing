@@ -57,14 +57,18 @@
       theme("colors.foreground")
     );
     background-size: 0% 0.04em;
-    background-position-y: 100%;
+    background-position-y: 80%;
     background-position-x: 0%;
     background-repeat: no-repeat;
-    transition: background-size 0.2s ease-in-out;
+    transition: background-size 0.3s ease-in-out;
   }
   .underline-text:hover,
   .underline-text:focus,
   .underline-text:active {
+    background-size: 100% 0.04em;
+  }
+
+  .underline-text-parent:hover .underline-text {
     background-size: 100% 0.04em;
   }
 }

@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRightCircle } from "lucide-react";
+import { ArrowRight, ArrowRightCircle } from "lucide-react";
 import Link from "next/link";
 
 export default function Hero() {
@@ -18,17 +18,22 @@ export default function Hero() {
                 doanh nghiệp.
               </p>
             </div>
-            <div className="flex flex-col md:flex-row md:items-center gap-2 sm:gap-4">
-              <Button asChild variant="dark" size="lg">
+            <div className="flex flex-col md:flex-row md:items-center gap-2 sm:gap-12">
+              <Button asChild variant="dark" size="lg" className="group">
                 <Link href="">
                   Khám phá giải pháp
-                  <ArrowRightCircle />
+                  <ArrowRightCircle className="group-hover:translate-x-1" />
                 </Link>
               </Button>
-              <Button asChild variant="secondary" size="lg">
+              <Button
+                asChild
+                variant="link"
+                size="lg"
+                className="group text-foreground"
+              >
                 <Link href="">
                   Bắt đầu ngay
-                  <ArrowRightCircle />
+                  <ArrowRight className="group-hover:translate-x-1" />
                 </Link>
               </Button>
             </div>

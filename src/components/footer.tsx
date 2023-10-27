@@ -106,7 +106,7 @@ export default function Footer() {
       <div className="container">
         <div className="pb-10 pt-20">
           <div className="space-y-8">
-            <Logo />
+            <Logo variant="white" />
 
             <div className="flex flex-col gap-2 mt-10">
               <div className="flex items-start gap-4">

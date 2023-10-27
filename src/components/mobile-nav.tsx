@@ -16,7 +16,8 @@ import {
   SheetHeader,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { Menu } from "lucide-react";
+import { ROUTES } from "@/constants";
+import { ArrowRightCircle, Menu } from "lucide-react";
 import Link from "next/link";
 
 export default function MobileNav() {
@@ -38,99 +39,30 @@ export default function MobileNav() {
             <Logo />
           </div>
         </SheetHeader>
-        <Accordion type="multiple" className="w-full">
-          <AccordionItem value="trang-chu">
-            <SheetClose asChild>
+
+        <ul>
+          {ROUTES.map((route) => (
+            <li
+              key={route.id}
+              className="border-b hover:border-primary transition-all"
+            >
               <Link
-                href="/"
-                className="py-4 font-medium transition-all hover:underline"
+                href={route.href}
+                className="block py-4 transition-all hover:text-primary"
               >
-                Trang chủ
+                {route.label}
               </Link>
-            </SheetClose>
-          </AccordionItem>
-          <AccordionItem value="khoa-hoc">
-            <AccordionTrigger>Khoá học</AccordionTrigger>
-            <AccordionContent>
-              <ul className="flex flex-col gap-3 py-2 pl-4 ml-2 text-base font-normal border-l-2 border-border text-muted-foreground">
-                <li>
-                  <SheetClose asChild>
-                    <Link
-                      href=""
-                      className="block w-full p-2 hover:text-accent-foreground"
-                    >
-                      Tech
-                    </Link>
-                  </SheetClose>
-                </li>
-                <li>
-                  <SheetClose asChild>
-                    <Link
-                      href=""
-                      className="block w-full p-2 hover:text-accent-foreground"
-                    >
-                      Tech
-                    </Link>
-                  </SheetClose>
-                </li>
-                <li>
-                  <SheetClose asChild>
-                    <Link
-                      href=""
-                      className="block w-full p-2 hover:text-accent-foreground"
-                    >
-                      Tech
-                    </Link>
-                  </SheetClose>
-                </li>
-              </ul>
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="blogs">
-            <SheetClose asChild>
-              <Link
-                href="/blogs"
-                className="py-4 font-medium transition-all hover:underline"
-              >
-                Blogs
-              </Link>
-            </SheetClose>
-          </AccordionItem>
-          <AccordionItem value="about">
-            <SheetClose asChild>
-              <Link
-                href="/about"
-                className="py-4 font-medium transition-all hover:underline"
-              >
-                Về chúng tôi
-              </Link>
-            </SheetClose>
-          </AccordionItem>
-          <AccordionItem value="contact">
-            <SheetClose asChild>
-              <Link
-                href="/contact"
-                className="py-4 font-medium transition-all hover:underline"
-              >
-                Liên hệ
-              </Link>
-            </SheetClose>
-          </AccordionItem>
-          <AccordionItem value="faq">
-            <SheetClose asChild>
-              <Link
-                href="/faq"
-                className="py-4 font-medium transition-all hover:underline"
-              >
-                FAQs
-              </Link>
-            </SheetClose>
-          </AccordionItem>
-        </Accordion>
+            </li>
+          ))}
+        </ul>
+
         <SheetFooter className="mx-auto mt-6">
           <SheetClose asChild>
-            <Button className="w-full" asChild>
-              <Link href="/register">Đăng ký ngay</Link>
+            <Button asChild className="group" size="lg">
+              <Link href="">
+                Bắt đầu ngay
+                <ArrowRightCircle className="group-hover:translate-x-1" />
+              </Link>
             </Button>
           </SheetClose>
         </SheetFooter>

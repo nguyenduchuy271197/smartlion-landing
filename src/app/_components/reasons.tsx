@@ -35,14 +35,14 @@ export default function Reasons() {
         <div className="space-y-16">
           <div className="space-y-4">
             <SectionHeading>TẠI SAO CHỌN SMARTLION?</SectionHeading>
-            <p className="text-2xl text-foreground/60 max-w-lg">
+            <p className="text-2xl text-foreground/60 lg:w-[42.857143%]">
               Quy trình linh hoạt và thích ứng của chúng tôi được điều chỉnh để
               phù hợp với doanh nghiệp của bạn.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2">
-            <div className="relative z-10 lg:py-16">
+          <div className="grid grid-cols-1 lg:grid-cols-[3fr_4fr]">
+            <div className="relative z-10">
               <div className="relative h-64 sm:h-80 lg:h-96 rounded-2xl overflow-hidden">
                 <Image
                   alt="Reasons"
@@ -52,8 +52,7 @@ export default function Reasons() {
                 />
               </div>
             </div>
-            <div className="relative flex items-center bg-primary/10">
-              <span className="hidden lg:absolute lg:inset-y-0 lg:-start-16 lg:block lg:w-16 lg:bg-primary/10" />
+            <div className="relative flex items-center">
               <div className="p-8 sm:p-16 lg:p-24 w-full">
                 <Accordion
                   type="single"
@@ -64,9 +63,7 @@ export default function Reasons() {
                   {REASONS.map((reason, index) => (
                     <AccordionItem value={reason.id} key={reason.id}>
                       <AccordionTrigger>
-                        <span className="text-5xl text-foreground/30">
-                          0{index + 1}
-                        </span>
+                        <span className="text-lg">0{index + 1}</span>
                         {reason.title}
                       </AccordionTrigger>
                       <AccordionContent>{reason.description}</AccordionContent>

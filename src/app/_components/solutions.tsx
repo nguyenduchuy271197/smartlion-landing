@@ -1,7 +1,7 @@
 import SectionHeading from "@/components/section-heading";
 import { Button } from "@/components/ui/button";
 import { SOLUTIONS } from "@/constants";
-import { MoveRight } from "lucide-react";
+import { ArrowRight, MoveRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -18,17 +18,20 @@ interface SolutionProps {
 
 function SolutionRow({ name, slug, thumbnail, items }: SolutionProps) {
   return (
-    <div className="flex items-center justify-between gap-8 py-20 border-b group h-[350px] border-foreground first:border-t">
-      <div className="space-y-2 basis-[360px]">
-        <Link
-          href={`/${slug}`}
-          className="block text-6xl sm:text-8xl underline-text"
-        >
-          {name}
-        </Link>
-        <Button variant="link" size="lg" asChild>
+    <div className="flex items-center justify-between gap-8 py-20 border-b group/solution h-[350px] border-foreground first:border-t underline-text-parent">
+      <div className="gap-4 lg:basis-[360px] flex flex-col items-start">
+        <div>
+          <Link
+            href={`/${slug}`}
+            className="inline text-6xl sm:text-8xl underline-text"
+          >
+            {name}
+          </Link>
+        </div>
+
+        <Button variant="link" size="lg" asChild className="group">
           <Link href={`/${slug}`}>
-            Xem thêm <MoveRight />
+            Xem thêm <ArrowRight className="group-hover:translate-x-1" />
           </Link>
         </Button>
       </div>
@@ -38,7 +41,7 @@ function SolutionRow({ name, slug, thumbnail, items }: SolutionProps) {
           alt={name}
           width={400}
           height={300}
-          className="ml-auto opacity-0 group-hover:opacity-100 transition-all translate-y-2 group-hover:translate-y-0 duration-500 rounded-2xl"
+          className="ml-auto opacity-0 group-hover/solution:opacity-100 transition-all translate-y-2 group-hover/solution:translate-y-0 duration-500 rounded-2xl"
         />
       </div>
       <div className="lg:basis-[500px]">

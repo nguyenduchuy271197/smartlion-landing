@@ -21,7 +21,7 @@ function ReviewCard({
   emphasis,
 }: Review) {
   return (
-    <div className="max-w-4xl mx-auto p-8 rounded-xl">
+    <div className="max-w-4xl mx-auto rounded-xl">
       <div className="flex flex-col justify-center gap-16">
         <div className="space-y-2">
           <p className="text-lg font-medium leading-relaxed text-primary">
