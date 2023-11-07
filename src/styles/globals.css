@@ -36,6 +36,9 @@
     --radius: 0.5rem;
 
     --navbar-height: 4.5rem;
+
+    /* Stepper */
+    --stepper-size: 6rem;
   }
 }
 
