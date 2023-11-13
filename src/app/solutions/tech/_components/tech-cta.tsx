@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, ArrowRightCircle } from "lucide-react";
 import Link from "next/link";
 
-export default function CTA() {
+export default function TechCTA() {
   return (
     <section>
       <div className="container">
