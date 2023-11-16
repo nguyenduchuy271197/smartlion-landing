@@ -28,12 +28,12 @@ function SocialCard({
   value: string;
 }) {
   return (
-    <li className="space-y-2">
-      <div className="w-16 h-16 flex items-center justify-center bg-primary text-primary-foreground rounded-lg">
-        <Icon className="w-8 h-8" />
+    <li className="space-y-2 flex-1 sm:p-8">
+      <div className="w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center bg-primary text-primary-foreground rounded-lg">
+        <Icon className="w-6 h-6 sm:w-8 sm:h-8" />
       </div>
       <div>
-        <h5 className="font-bold text-2xl">{label}</h5>
+        <h5 className="font-bold text-lg sm:text-2xl">{label}</h5>
         <p>{value}</p>
       </div>
     </li>
@@ -43,7 +43,7 @@ function SocialCard({
 export default function ContactSocials() {
   return (
     <div>
-      <ul className="space-y-6">
+      <ul className="flex items-center gap-6 flex-wrap">
         <SocialCard
           icon={SOCIALS.email.icon}
           label={SOCIALS.email.label}

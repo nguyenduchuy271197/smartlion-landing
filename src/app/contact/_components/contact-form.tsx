@@ -21,6 +21,7 @@ import axios from "axios";
 import { Textarea } from "@/components/ui/textarea";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { SOLUTIONS } from "@/constants";
+import { ArrowRightCircle } from "lucide-react";
 
 export const contactFormSchema = z.object({
   name: z.string().min(2, {
@@ -66,7 +67,7 @@ export default function ApplyForm() {
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-12">
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8">
           {/* Name */}
           <FormField
             control={form.control}
@@ -157,33 +158,12 @@ export default function ApplyForm() {
             )}
           />
 
-          {/* Content */}
-          <FormField
-            control={form.control}
-            name="content"
-            render={({ field }) => (
-              <FormItem className="col-span-full">
-                <FormLabel>Nội dung yêu cầu</FormLabel>
-                <FormControl>
-                  <Textarea
-                    placeholder="Viết một cái gì đó..."
-                    className="resize-none h-44"
-                    {...field}
-                  />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-        </div>
-
-        <div className="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
           <FormField
             control={form.control}
             name="solution"
             render={({ field }) => (
               <FormItem className="space-y-4">
-                <FormLabel className="text-base">Giải pháp quan tâm</FormLabel>
+                <FormLabel>Lĩnh vực</FormLabel>
                 <FormControl>
                   <RadioGroup
                     onValueChange={field.onChange}
@@ -209,11 +189,31 @@ export default function ApplyForm() {
               </FormItem>
             )}
           />
+
+          {/* Content */}
+          <FormField
+            control={form.control}
+            name="content"
+            render={({ field }) => (
+              <FormItem className="col-span-full">
+                <FormLabel>Nội dung yêu cầu</FormLabel>
+                <FormControl>
+                  <Textarea
+                    placeholder="Viết một cái gì đó..."
+                    className="resize-none h-44"
+                    {...field}
+                  />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
         </div>
 
-        <div className="max-w-5xl mx-auto">
-          <Button type="submit" size="lg" className="w-full">
-            문의하기
+        <div>
+          <Button type="submit" size="lg" className="group w-full sm:w-auto">
+            Gửi
+            <ArrowRightCircle className="group-hover:translate-x-1" />
           </Button>
         </div>
       </form>

@@ -6,10 +6,12 @@ export default function TechCTA() {
   return (
     <section>
       <div className="container">
-        <div className="bg-[url('/hero-background.jpg')] py-20 px-20 rounded-3xl space-y-12 bg-cover bg-center">
+        <div className="bg-[url('/hero-background.jpg')] sm:p-20 rounded-3xl space-y-6 sm:space-y-12 bg-cover bg-center p-12">
           <div className="text-primary-foreground space-y-2">
-            <h3 className="text-5xl font-bold">Chưa tìm ra giải pháp?</h3>
-            <p className="text-lg">
+            <h3 className="text-3xl sm:text-5xl font-bold">
+              Chưa tìm ra giải pháp?
+            </h3>
+            <p className="sm:text-xl">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
               voluptas at,
             </p>

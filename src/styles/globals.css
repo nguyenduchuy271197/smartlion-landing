@@ -80,3 +80,9 @@
 .swiper-button-next {
   display: none !important;
 }
+
+@media (max-width: 640px) {
+  :root {
+    --stepper-size: 4rem;
+  }
+}

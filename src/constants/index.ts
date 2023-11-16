@@ -1,22 +1,22 @@
 export const ROUTES = [
   {
     id: "tech",
-    href: "/tech",
+    href: "/solutions/tech",
     label: "Tech",
   },
   {
     id: "branding",
-    href: "/branding",
+    href: "/solutions/branding",
     label: "Branding",
   },
   {
     id: "design",
-    href: "/design",
+    href: "/solutions/design",
     label: "Design",
   },
   {
     id: "social-video",
-    href: "/social-video",
+    href: "/solutions/social-video",
     label: "Social Video",
   },
 ];

@@ -35,7 +35,7 @@ export default function TechBanner() {
               </Button>
             </div>
           </div>
-          <div className="absolute right-0 -top-12">
+          <div className="hidden lg:block absolute right-0 -top-12 ">
             <VerticalImages />
           </div>
         </div>

@@ -30,9 +30,9 @@ function TechSolution({
   options,
 }: TechSolutionProps) {
   return (
-    <section>
+    <section className={cn(options?.reverse && "bg-primary/10")}>
       <div className="container">
-        <div className="space-y-8">
+        <div className="space-y-8 py-20">
           <div className="space-y-4">
             <SectionHeading>{title}</SectionHeading>
             <p className="text-2xl text-foreground/60 lg:w-[42.857143%]">
