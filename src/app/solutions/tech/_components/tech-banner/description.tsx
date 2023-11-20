@@ -23,7 +23,7 @@ const listItem = {
 
 export default function Description() {
   const description =
-    "Chúng tôi cung cấp các giải pháp thông minh về thiết kế thương hiệu, social media, công nghệ cho các công ty khởi nghiệp và doanh nghiệp.";
+    "Chúng tôi cung cấp các giải pháp công nghệ thông minh và tối ưu mà bất kỳ doanh nghiệp nào cũng cần";
   return (
     <motion.p
       variants={container}

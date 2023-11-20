@@ -1,0 +1,132 @@
+[
+  {
+    "title": "Dịch vụ Web Development",
+    "subtitle": "Hiện diện mạnh mẽ trong tâm trí khách hàng.",
+    "image": "https://images.unsplash.com/photo-1698584200770-3838c3690a27?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "solutions": [
+      {
+        "id": "1",
+        "title": "HTML/CSS/JavaScript Frameworks",
+        "description": "<li><strong>React</strong>: Một thư viện JavaScript để xây dựng giao diện người dùng.</li><li><strong>Angular</strong>: Một khung làm việc JavaScript phổ biến để xây dựng ứng dụng web.</li><li><strong>Vue.js</strong>: Một khung làm việc JavaScript tiến bộ để xây dựng giao diện người dùng.</li>"
+      },
+      {
+        "id": "2",
+        "title": "Code Editors",
+        "description": "<li><strong>Visual Studio Code</strong>: Một trình soạn mã phổ biến, miễn phí và mã nguồn mở.</li><li><strong>Sublime Text</strong>: Một trình soạn mã đa năng với hệ sinh thái plugin lớn.</li><li><strong>Atom</strong>: Một trình soạn mã có thể hack và tùy chỉnh cao.</li>"
+      },
+      {
+        "id": "3",
+        "title": "Version Control",
+        "description": "<li><strong>Git</strong>: Hệ thống quản lý phiên bản phân tán được sử dụng để theo dõi các thay đổi trong mã nguồn.</li><li><strong>GitHub</strong>: Một nền tảng dựa trên web để lưu trữ và hợp tác trên kho mã nguồn Git.</li>"
+      }
+    ]
+  },
+  {
+    "title": "Dịch vụ API & CMS development",
+    "subtitle": "Kết nối, tương tác và quản lý mọi nội dung của bạn",
+    "image": "https://images.unsplash.com/photo-1698584200770-3838c3690a27?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "solutions": [
+      {
+        "id": "1",
+        "title": "Node.js",
+        "description": "<li><strong>Node.js:</strong> Môi trường thực thi cho phép bạn xây dựng ứng dụng phía máy chủ bằng JavaScript.</li>"
+      },
+      {
+        "id": "2",
+        "title": "Express.js",
+        "description": "<li><strong>Express.js:</strong> Một khung làm việc ứng dụng web Node.js cho việc xây dựng API mạnh mẽ.</li>"
+      },
+      {
+        "id": "3",
+        "title": "Django",
+        "description": "<li><strong>Django:</strong> Một khung làm việc web Python cấp cao cho việc xây dựng API và ứng dụng web.</li>"
+      },
+      {
+        "id": "4",
+        "title": "WordPress",
+        "description": "<li><strong>WordPress:</strong> Hệ thống quản lý nội dung (CMS) phổ biến để xây dựng trang web và blog.</li>"
+      },
+      {
+        "id": "5",
+        "title": "Drupal",
+        "description": "<li><strong>Drupal:</strong> Một CMS khác để tạo trang web và ứng dụng web có nhiều nội dung.</li>"
+      }
+    ]
+  },
+  {
+    "title": "Dịch vụ Mobile App development",
+    "subtitle": "Phát triển ứng dụng, tối ưu trải nghiệm người dùng",
+    "image": "https://images.unsplash.com/photo-1698584200770-3838c3690a27?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "solutions": [
+      {
+        "id": "1",
+        "title": "iOS Development",
+        "description": "<li><strong>Xcode:</strong> Môi trường phát triển tích hợp chính thức cho phát triển ứng dụng iOS.</li><li><strong>Swift:</strong> Ngôn ngữ lập trình của Apple cho phát triển ứng dụng iOS và macOS.</li>"
+      },
+      {
+        "id": "2",
+        "title": "Android Development",
+        "description": "<li><strong>Android Studio:</strong> Môi trường phát triển chính thức cho phát triển ứng dụng Android.</li><li><strong>Kotlin:</strong> Ngôn ngữ lập trình hiện đại được sử dụng cho phát triển ứng dụng Android.</li>"
+      },
+      {
+        "id": "3",
+        "title": "Cross-Platform Development",
+        "description": "<li><strong>React Native:</strong> Một khung làm việc để xây dựng ứng dụng di động bằng JavaScript và React.</li><li><strong>Flutter:</strong> Bộ công cụ giao diện người dùng của Google cho việc xây dựng ứng dụng được biên dịch natively cho di động, web và máy tính để bàn.</li>"
+      }
+    ]
+  },
+  {
+    "title": "Dịch vụ System",
+    "subtitle": "Tích hợp hệ thống, tiết kiệm tài nguyên, cải thiện hiệu suất",
+    "image": "https://images.unsplash.com/photo-1698584200770-3838c3690a27?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "solutions": [
+      {
+        "id": "1",
+        "title": "Docker",
+        "description": "<li><strong>Docker:</strong> Một nền tảng cho việc phát triển, đóng gói và chạy ứng dụng trong các container.</li>"
+      },
+      {
+        "id": "2",
+        "title": "Kubernetes",
+        "description": "<li><strong>Kubernetes:</strong> Một nền tảng quản lý container mã nguồn mở cho việc quản lý các ứng dụng trong container.</li>"
+      },
+      {
+        "id": "3",
+        "title": "Amazon Web Services (AWS)",
+        "description": "<li><strong>Amazon Web Services (AWS):</strong> Cung cấp một loạt rộng lớn các dịch vụ điện toán đám mây để lưu trữ và quản lý ứng dụng và hệ thống.</li>"
+      },
+      {
+        "id": "4",
+        "title": "Microsoft Azure",
+        "description": "<li><strong>Microsoft Azure:</strong> Nền tảng điện toán đám mây của Microsoft với các dịch vụ cho việc xây dựng, triển khai và quản lý ứng dụng.</li>"
+      }
+    ]
+  },
+  {
+    "title": "Dịch vụ Testing & QA",
+    "subtitle": "Đảm bảo chất lượng, giảm thiểu rủi ro phát sinh",
+    "image": "https://images.unsplash.com/photo-1698584200770-3838c3690a27?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "solutions": [
+      {
+        "id": "1",
+        "title": "Selenium",
+        "description": "<li><strong>Selenium:</strong> Một khung làm việc mã nguồn mở để tự động hóa trình duyệt web cho mục đích kiểm tra.</li>"
+      },
+      {
+        "id": "2",
+        "title": "Jenkins",
+        "description": "<li><strong>Jenkins:</strong> Một máy chủ tự động mã nguồn mở cho việc xây dựng, kiểm tra và triển khai mã.</li>"
+      },
+      {
+        "id": "3",
+        "title": "Postman",
+        "description": "<li><strong>Postman:</strong> Một nền tảng hợp tác cho việc phát triển API bao gồm các công cụ kiểm tra và tài liệu hóa API.</li>"
+      },
+      {
+        "id": "4",
+        "title": "Jira",
+        "description": "<li><strong>Jira:</strong> Công cụ quản lý dự án và theo dõi vấn đề phổ biến cho phát triển phần mềm, bao gồm kiểm tra và QA.</li>"
+      }
+    ]
+  }
+]

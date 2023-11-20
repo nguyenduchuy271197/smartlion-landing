@@ -22,25 +22,35 @@ const process = [
     ],
   },
   {
-    headline: "Lập kế hoạch",
+    headline: "Phát triển",
     items: [
-      "Xác định mục tiêu dự án, yêu cầu và đối tượng mục tiêu.",
-      "Tạo kế hoạch dự án và thời gian.",
+      "Viết mã cho phần giao diện trang web (HTML, CSS, JavaScript).",
+      "Cài đặt máy chủ và cơ sở dữ liệu cho chức năng phía sau.",
     ],
   },
   {
-    headline: "Lập kế hoạch",
+    headline: "Nội dung",
     items: [
-      "Xác định mục tiêu dự án, yêu cầu và đối tượng mục tiêu.",
-      "Tạo kế hoạch dự án và thời gian.",
+      "Tạo hoặc thu thập văn bản, hình ảnh và phương tiện khác cho trang web.",
     ],
   },
   {
-    headline: "Lập kế hoạch",
+    headline: "Kiểm tra",
     items: [
-      "Xác định mục tiêu dự án, yêu cầu và đối tượng mục tiêu.",
-      "Tạo kế hoạch dự án và thời gian.",
+      "Kiểm tra trang web để tìm lỗi, độ phản hồi và trải nghiệm của người dùng.",
+      "Đảm bảo bảo mật và hiệu suất.",
     ],
+  },
+  {
+    headline: "Triển khai",
+    items: [
+      "Triển khai trang web trên máy chủ web hoặc nền tảng lưu trữ.",
+      "Cấu hình tên miền và theo dõi triển khai.",
+    ],
+  },
+  {
+    headline: "Bảo trì",
+    items: ["Cung cấp hỗ trợ liên tục, cập nhật và bảo mật."],
   },
 ];
 

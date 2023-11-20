@@ -19,6 +19,11 @@ export const ROUTES = [
     href: "/solutions/social-video",
     label: "Social Video",
   },
+  {
+    id: "contact",
+    href: "/contact",
+    label: "Contact",
+  },
 ];
 
 export const REVIEWS = [

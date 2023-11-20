@@ -22,16 +22,16 @@ export default function Heading() {
       variants={container}
       initial="hidden"
       animate="visible"
-      className="text-4xl sm:text-5xl md:text-7xl font-bold"
+      className="text-4xl sm:text-5xl md:text-5xl font-medium max-w-xl"
     >
-      Choose us. <br /> Choose{" "}
-      <TypeAnimation
+      Thúc đẩy sự phát triển thông qua giải pháp công nghệ
+      {/* <TypeAnimation
         sequence={["SMART", 1000, "TECH", 1000]}
         wrapper="span"
         speed={50}
         repeat={Infinity}
         className="text-primary"
-      />
+      /> */}
     </motion.h1>
   );
 }

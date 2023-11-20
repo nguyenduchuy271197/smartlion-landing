@@ -12,8 +12,8 @@ export default function CTA() {
               Chưa tìm ra giải pháp?
             </h3>
             <p className="sm:text-xl">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
-              voluptas at,
+              Hãy kết nối với chúng tôi và chúng ta sẽ tạo ra một cú hích tuyệt
+              vời, thúc đẩy sự phát triển cho doanh nghiệp của bạn.
             </p>
           </div>
           <div className="flex flex-col md:flex-row md:items-center gap-2 sm:gap-12">

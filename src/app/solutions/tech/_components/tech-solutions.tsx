@@ -7,6 +7,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { cn } from "@/lib/utils";
+import techSolutions from "./tech-solutions.json";
 
 interface TechSolutionProps {
   title: string;
@@ -42,7 +43,7 @@ function TechSolution({
 
           <div
             className={cn(
-              "flex flex-col gap-8 justify-between",
+              "flex flex-col gap-8",
               options?.reverse ? "lg:flex-row-reverse" : "lg:flex-row"
             )}
           >
@@ -56,7 +57,7 @@ function TechSolution({
                 />
               </div>
             </div>
-            <div className="relative flex items-center">
+            <div className="relative flex items-center flex-grow lg:px-12">
               <div className="w-full">
                 <Accordion
                   type="single"
@@ -71,7 +72,11 @@ function TechSolution({
                         {solution.title}
                       </AccordionTrigger>
                       <AccordionContent>
-                        {solution.description}
+                        <div
+                          dangerouslySetInnerHTML={{
+                            __html: solution.description,
+                          }}
+                        />
                       </AccordionContent>
                     </AccordionItem>
                   ))}
@@ -88,63 +93,16 @@ function TechSolution({
 export default function TechSolutions() {
   return (
     <div className="space-y-16">
-      <TechSolution
-        title="DỊCH VỤ WEB DEVELOPMENT"
-        subtitle="Detailed descriptions
-chúng tôi được điều chỉnh để phù hợp
-với doanh nghiệp của bạn."
-        image="https://images.unsplash.com/photo-1698584200770-3838c3690a27?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        solutions={[
-          {
-            id: "1",
-            title: "HTML/CSS/JavaScript Frameworks",
-            description:
-              "Một khung làm việc JavaScript phổ biến để xây dựng ứng dụng web.",
-          },
-          {
-            id: "2",
-            title: "HTML/CSS/JavaScript Frameworks",
-            description:
-              "Một khung làm việc JavaScript phổ biến để xây dựng ứng dụng web.",
-          },
-          {
-            id: "3",
-            title: "HTML/CSS/JavaScript Frameworks",
-            description:
-              "Một khung làm việc JavaScript phổ biến để xây dựng ứng dụng web.",
-          },
-        ]}
-      />
-      <TechSolution
-        title="DỊCH VỤ WEB DEVELOPMENT"
-        subtitle="Detailed descriptions
-chúng tôi được điều chỉnh để phù hợp
-với doanh nghiệp của bạn."
-        image="https://images.unsplash.com/photo-1698584200770-3838c3690a27?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        solutions={[
-          {
-            id: "1",
-            title: "HTML/CSS/JavaScript Frameworks",
-            description:
-              "Một khung làm việc JavaScript phổ biến để xây dựng ứng dụng web.",
-          },
-          {
-            id: "2",
-            title: "HTML/CSS/JavaScript Frameworks",
-            description:
-              "Một khung làm việc JavaScript phổ biến để xây dựng ứng dụng web.",
-          },
-          {
-            id: "3",
-            title: "HTML/CSS/JavaScript Frameworks",
-            description:
-              "Một khung làm việc JavaScript phổ biến để xây dựng ứng dụng web.",
-          },
-        ]}
-        options={{
-          reverse: true,
-        }}
-      />
+      {techSolutions.map((solution, index) => (
+        <TechSolution
+          key={solution.title}
+          title={solution.title}
+          subtitle={solution.subtitle}
+          image={solution.image}
+          solutions={solution.solutions}
+          options={{ reverse: Boolean(index % 2) }}
+        />
+      ))}
     </div>
   );
 }
